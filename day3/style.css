@@ -1,0 +1,67 @@
+body{
+	font-family: verdana;
+	font-size: 12px;
+	text-align: center;
+}
+
+#login{
+
+	font-family: verdana;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	
+	
+}
+
+#superform {
+	font-family: Georgia;
+	font-size: 20px;
+	font-style: italic;
+	display: inline-block;
+	width: 200px;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 8px;
+	text-align: left;
+	background-color: #456;
+	
+
+}
+
+.formyforms {
+	display: inline-block;
+	width: 100;
+	background-color: #666;
+	border-style: 	solid;
+	border-width: 1px;
+	border-color: #000;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 3px;
+	color: #FFF;
+}
+
+.chickennuggets {
+	display: block;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+#thisisabutton 
+{
+	border: 2px solid;
+	border-radius: 20px;
+	padding: 10px;
+	font-size: 14px; 
+	background-color:	#666;
+	font-weight: bold;
+	Background-color:	#2d525d;
+	margin-left: 100px;
+}
+
+.shadow {
+box-shadow: 10px 10px 5px #888888;
+}
