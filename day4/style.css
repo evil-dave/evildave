@@ -1,0 +1,108 @@
+body{
+	font-family: verdana;
+	font-size: 12px;
+	text-align: center;
+}
+
+input[type=text],
+input [type=submit],
+textarea,
+label {
+	display: block;
+	text-align: left;
+}
+
+#talker, #talker2{
+
+	font-family: verdana;
+	font-size: 32px;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	
+	
+}
+
+#talker2 {
+	text-decoration: blink;
+	text-shadow: 8px 6px 14px #666;
+}
+
+#wrapper {
+	font-family: Georgia;
+	font-size: 20px;
+	font-style: italic;
+	display: inline-block;
+	width: 400px;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 8px;
+	text-align: left;
+	background-color: #456;
+	
+
+}
+
+.formyforms {
+	display: inline-block;
+	text-align: left;
+	width: 370px;
+	height: 30px;
+	background-color: #666;
+	border-style: 	solid;
+	border-width: 1px;
+	border-color: #000;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 3px;
+	padding-left: 8px;
+	color: #FFF;
+}
+
+.chickennuggets {
+	display: block;
+	height: 20px;
+	width: 200px;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+.bbqchickennuggets {
+	display: block;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+#thisisabutton 
+{
+	float: right;
+	border: 2px solid;
+	border-radius: 20px;
+	padding: 10px;
+	font-size: 14px; 
+	background-color:	#666;
+	font-weight: bold;
+	color: #CFD1DC;
+	Background-color:	#2d525d;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	
+}
+
+.shadow {
+box-shadow: 10px 10px 15px #888888;
+}
+
+#newsletter {
+	display: inline;
+	clear: right;
+}
+
+#newsletterText {
+	font-family: verdana;
+	font-size: 12px;
+	padding-left: 5px;
+	width: 250px;
+	height: 15px;
+}
