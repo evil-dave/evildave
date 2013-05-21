@@ -1,0 +1,163 @@
+@charset "utf-8";
+/**
+ * Clearfix
+ */
+.cf:before,
+.cf:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.cf:after {
+	clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+ *zoom: 1;
+}
+body {
+	width: 98%;
+	margin: 0 auto;
+	font-size: 100%;
+	max-width: 62.5em;
+	font-family: 'Myriad Pro', Myriad, Tahoma, Geneva, sans-serif
+}
+a {
+	color: #09F;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	color: #F93;
+}
+header {
+	background-color: #EEE;
+	padding: 1em;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+nav li{
+	display:inline-block;
+	margin:.25em .25em .25em 0;
+	padding:.25em .5em;
+	background-color: rgba(0,0,0,.05);
+}
+
+main {
+	width: 64%;
+	float: right;
+	min-width: 20em;
+}
+aside {
+	width: 30%;
+	float: left;
+	min-width: 9.5em;
+	color: #999;
+}
+aside h2 {
+	color: #000;
+}
+footer {
+	clear: both;
+	background-color: #EEE;
+	padding: .5em 1em;
+}
+.meta {
+	font-style: italic;
+	color: #666;
+	font-size: .875em;
+	float: right;
+	width: 25%;
+	line-height: 1.5em;
+	display: block;
+}
+#comments {
+	border-top: dotted 1px #CCC;
+	margin-top: 1.5em;
+}
+#comments ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#comments ol li {
+	padding: 10px;
+	background-color: #EEE;
+}
+#comments ol li:nth-child(odd) {
+	background-color: #F5F5F5;
+}
+#comments ol li h4 {
+	margin: 0;
+}
+.rss {
+	display: block;
+	float: right;
+}
+.rss i {
+	display: inline-block;
+	background-color: #F90;
+	color: white;
+	width: 1.6em;
+	height: 1.6em;
+	line-height: 1.6em;
+	text-align: center;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	font-size: .9em;
+}
+/*
+	== Forms!
+*/
+
+.message {
+	background-color: #FFC;
+	border: solid 1px #FFCC66;
+	padding: .5em;
+	-webkit-border-radius: 1em;
+	border-radius: 1em;
+	width: 75%;
+	color: #930;
+}
+.success {
+	background-color: #D5FED3;
+	color: #060;
+	border: solid 1px #99CC66;
+}
+label,
+input[type=submit] {
+	display: block;
+	margin-top: 1em;
+}
+input[type=submit],
+.btn {
+	background-color: #09F;
+	color: white;
+	padding: .3em .7em .15em .7em;
+	border: none;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	font-size: .9em;
+	margin-bottom: 1em;
+	font-size: 1.25em;
+	line-height: 1em;
+}
+input[type=submit]:hover,
+input[type=submit]:focus,
+.btn:hover,
+.btn:focus {
+	background-color: #F93;
+	color: white;
+}
+input[type=text],
+input[type=url],
+input[type=email],
+textarea {
+	width: 75%;
+	padding: .25em;
+	font-family: "Lucida Console", "Courier New", Courier, monospace;
+}

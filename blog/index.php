@@ -1,62 +1,46 @@
-<?php require('db_connect.php');  ?>
-
-<!DOCTYPE html>
+<?php require('db_connect.php'); 
+include_once ('function.php');?>
+<!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-<title>Evil Dave's PHP Blog</title>
+<meta charset="utf-8">
+<title>Melissa's PHP Blog</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 	<header>
-		<h1>A blog about caring</h1>
+		<h1>Melissa's Blog</h1>
+		<nav>
+			<ul>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="index.php?page=blog">Blog</a></li>
+				<li><a href="index.php?page=links">Links</a></li>
+			</ul>
+		</nav>
 	</header>
 
 	<main>
-		<?php 
-		// set up a query to retrieve the two most recent posts that are published
-		$query = ' SELECT title, body, date, category_id, post_id 
-				FROM posts 
-				WHERE is_public = 1
-				ORDER BY date DESC 
-				LIMIT 2';
-		// run it and check to make sure the result contains posts
-		if ( $result = $db-> query($query) ):	
-		?>
-
-		<h2>Most Recent Post</h2>
-
-		<?php 
-		//loop through the list of results
-		//today we are using a "while" loop
-		while ( $row = $result->fetch_assoc()):
-		?>
-		
-		<article class ="post">
-			<h3><?php echo $row['title']; ?></h3>
-			<div class="postmeta">Posted on <?php echo $row['date']; ?> | in the category NAME </div>
-			<p><?php echo $row['body']; ?></p>
-		</article>
-
-		<?php 
-		endwhile;
-		?>
-		
-		<?php else: ?>
-
-		<h2> The Force is strong with this one </h2>
-
-		<?php endif;?>
-
+	<?php 
+		//logic to load the correct page contents. 
+		//URI will look like domain/index.php?page=something
+		switch( $_GET['page'] ){
+			case 'blog':
+				include( 'content-blog.php' );
+			break;
+			case 'single':
+				include ('content-single.php');
+			break;
+			default:
+				include('content-home.php');
+		}
+		 ?>
 	</main>
 
-	<aside>
-		<?php include ('sidebar.php'); ?>
-	</aside>
+	<?php include('sidebar.php'); ?>
 
 	<footer>
-		<p>&copy; 2013 Blatt College</p>
+		<p>&copy; 2013 Platt College</p>
 	</footer>
 </body>
-
 </html>
