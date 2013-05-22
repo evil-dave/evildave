@@ -4,13 +4,15 @@ include_once ('function.php');?>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Melissa's PHP Blog</title>
+<title>Evil Dave's PHP Blog</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 	<header>
-		<h1>Melissa's Blog</h1>
+		<img src="images/logo_CITIPA_100x100.gif" />
+		<h1>Evil Dave's Blog</h1>
+		
 		<nav>
 			<ul>
 				<li><a href="index.php">Home</a></li>

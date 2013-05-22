@@ -13,6 +13,7 @@ function convert_date($dateR){
 }
 
 //show the number of comments on any post with good grammar
+// @param $number init
 function comments_number($number){
 	if($number == 1 ){
 		echo '1 Comment';
@@ -22,4 +23,13 @@ function comments_number($number){
 		echo "$number Comments";
 	}
 
+}
+/**
+ * Sanitizer for DB inputs
+ * @param $input mixed - pass any dirty form field
+ * @param $link database connection
+ */
+
+function clean_input ($input, $link){
+	return mysqli_real_escape_string($link, strip_tags(trim($input)));	
 }
